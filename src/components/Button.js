@@ -1,9 +1,16 @@
 import "./Button.css"
 
-function Button () {
+// function declaration (start with word function)
+function Button (props) {
     return (
-    <button className="button">Hi there</button>
+    <button className="button">{props.text}{props.children}</button>
     )
 }
 
+// select and press shift and {} to wrap it in it
+
 export default Button
+
+
+// function expression
+// const functionname = (paramenter) => {function code here}
